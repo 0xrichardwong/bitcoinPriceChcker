@@ -1,0 +1,15 @@
+<!-- Header -->
+<%- include('./partials/header.ejs') %>
+
+<!-- Body -->
+<% if (locals.btcPrice) { %>
+<h1>
+  Current BTC Price: $
+  <%= btcPrice %>
+</h1>
+<% } else { %>
+  <h1>Welcome to BTC Price Checker!! </h1>
+<% } %>
+
+<!-- Footer -->
+<%- include('./partials/footer.ejs') %>
